@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		F7FCD13920365F3200A30240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCD13820365F3200A30240 /* AppDelegate.swift */; };
-		F7FCD13B20365F3200A30240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCD13A20365F3200A30240 /* ViewController.swift */; };
+		F7FCD13B20365F3200A30240 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCD13A20365F3200A30240 /* CategoriesVC.swift */; };
 		F7FCD13E20365F3200A30240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7FCD13C20365F3200A30240 /* Main.storyboard */; };
 		F7FCD14020365F3200A30240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FCD13F20365F3200A30240 /* Assets.xcassets */; };
 		F7FCD14320365F3200A30240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7FCD14120365F3200A30240 /* LaunchScreen.storyboard */; };
+		F7FCD15020366A2600A30240 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCD14F20366A2600A30240 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F7FCD13520365F3200A30240 /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FCD13820365F3200A30240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7FCD13A20365F3200A30240 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7FCD13A20365F3200A30240 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		F7FCD13D20365F3200A30240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7FCD13F20365F3200A30240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7FCD14220365F3200A30240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7FCD14420365F3200A30240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7FCD14F20366A2600A30240 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		F7FCD13720365F3200A30240 /* Threads */ = {
 			isa = PBXGroup;
 			children = (
+				F7FCD14C2036693F00A30240 /* View */,
+				F7FCD14B2036693300A30240 /* Controller */,
+				F7FCD14A2036692700A30240 /* Model */,
 				F7FCD13820365F3200A30240 /* AppDelegate.swift */,
-				F7FCD13A20365F3200A30240 /* ViewController.swift */,
 				F7FCD13C20365F3200A30240 /* Main.storyboard */,
 				F7FCD13F20365F3200A30240 /* Assets.xcassets */,
 				F7FCD14120365F3200A30240 /* LaunchScreen.storyboard */,
 				F7FCD14420365F3200A30240 /* Info.plist */,
 			);
 			path = Threads;
+			sourceTree = "<group>";
+		};
+		F7FCD14A2036692700A30240 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7FCD14B2036693300A30240 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7FCD13A20365F3200A30240 /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7FCD14C2036693F00A30240 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7FCD14F20366A2600A30240 /* CategoryCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7FCD13B20365F3200A30240 /* ViewController.swift in Sources */,
+				F7FCD13B20365F3200A30240 /* CategoriesVC.swift in Sources */,
 				F7FCD13920365F3200A30240 /* AppDelegate.swift in Sources */,
+				F7FCD15020366A2600A30240 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
