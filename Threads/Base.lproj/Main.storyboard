@@ -31,20 +31,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tpk-11-nAa">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tpk-11-nAa">
                                 <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="160" id="NRJ-as-gBf" customClass="CategoryCell" customModule="Threads" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="160" id="NRJ-as-gBf" customClass="CategoryCell" customModule="Threads" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NRJ-as-gBf" id="fQQ-Jb-wen">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="wmf-3i-tFi">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="wmf-3i-tFi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="156.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="375" id="eYx-LR-xcv"/>
+                                                        <constraint firstAttribute="height" constant="156.5" id="tje-zx-6dq"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLp-rv-yjx">
                                                     <rect key="frame" x="141" y="54" width="93" height="51"/>
@@ -56,8 +59,12 @@
                                             <constraints>
                                                 <constraint firstItem="NLp-rv-yjx" firstAttribute="top" secondItem="fQQ-Jb-wen" secondAttribute="topMargin" constant="43" id="2na-h5-L46"/>
                                                 <constraint firstItem="NLp-rv-yjx" firstAttribute="centerY" secondItem="fQQ-Jb-wen" secondAttribute="centerY" id="G0Y-qF-uuW"/>
+                                                <constraint firstAttribute="trailing" secondItem="wmf-3i-tFi" secondAttribute="trailing" id="O92-EV-LRD"/>
+                                                <constraint firstItem="wmf-3i-tFi" firstAttribute="top" secondItem="fQQ-Jb-wen" secondAttribute="top" id="PfA-mp-JXE"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="NLp-rv-yjx" secondAttribute="bottom" constant="44" id="cK9-6C-ZqV"/>
+                                                <constraint firstItem="wmf-3i-tFi" firstAttribute="leading" secondItem="fQQ-Jb-wen" secondAttribute="leading" id="dB4-NA-pBh"/>
                                                 <constraint firstItem="NLp-rv-yjx" firstAttribute="centerX" secondItem="fQQ-Jb-wen" secondAttribute="centerX" id="h3m-1q-3Dk"/>
+                                                <constraint firstAttribute="bottom" secondItem="wmf-3i-tFi" secondAttribute="bottom" constant="3" id="ziq-Xl-a5s"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

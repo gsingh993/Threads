@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F75AE969203A131C0096A719 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75AE968203A131C0096A719 /* Category.swift */; };
+		F75AE96C203A149A0096A719 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75AE96B203A149A0096A719 /* DataService.swift */; };
 		F7FCD13920365F3200A30240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCD13820365F3200A30240 /* AppDelegate.swift */; };
 		F7FCD13B20365F3200A30240 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCD13A20365F3200A30240 /* CategoriesVC.swift */; };
 		F7FCD13E20365F3200A30240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7FCD13C20365F3200A30240 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F75AE968203A131C0096A719 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F75AE96B203A149A0096A719 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F7FCD13520365F3200A30240 /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FCD13820365F3200A30240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7FCD13A20365F3200A30240 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F75AE96A203A14870096A719 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F75AE96B203A149A0096A719 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		F7FCD12C20365F3200A30240 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +68,7 @@
 		F7FCD13720365F3200A30240 /* Threads */ = {
 			isa = PBXGroup;
 			children = (
+				F75AE96A203A14870096A719 /* Services */,
 				F7FCD14C2036693F00A30240 /* View */,
 				F7FCD14B2036693300A30240 /* Controller */,
 				F7FCD14A2036692700A30240 /* Model */,
@@ -71,6 +84,7 @@
 		F7FCD14A2036692700A30240 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F75AE968203A131C0096A719 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +180,8 @@
 				F7FCD13B20365F3200A30240 /* CategoriesVC.swift in Sources */,
 				F7FCD13920365F3200A30240 /* AppDelegate.swift in Sources */,
 				F7FCD15020366A2600A30240 /* CategoryCell.swift in Sources */,
+				F75AE969203A131C0096A719 /* Category.swift in Sources */,
+				F75AE96C203A149A0096A719 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
